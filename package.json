@@ -1,5 +1,5 @@
 {
-  "name": "mdx-slide-experiment",
+  "name": "mdx-slide-starter",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -19,7 +19,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deck": "mdx-deck src/deck/deck.mdx",
+    "deck-app": "google-chrome --app=http://localhost:8000"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -35,5 +37,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "mdx-deck": "^4.1.1",
+    "prettier": "^2.0.5"
   }
 }
