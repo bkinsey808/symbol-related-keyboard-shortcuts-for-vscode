@@ -1,19 +1,144 @@
-import  App  from '../App';
+import App from '../App';
+
+# Symbol Related Keyboard Shortcuts for VSCode
+
+"Programmers, know thy tools!"
+
+This is a commandment that many programmers live by.
+It means to know the tools you use every day really well,
+_especially keyboard shortcuts_.
+
+Code for this slideshow here:
+[github.com/bkinsey808/keyboard-shortcuts-for-vscode](http://github.com/bkinsey808/symbol-related-keyboard-shortcuts-for-vscode)
+
+---
 
 # Ben Kinsey
+
 [@bkinsey808](http://twitter.com/bkinsey808)
 
-* Professional Web Developer
-* Open Source enthusiast
-* Machine Learning adventurer
+- Open Source Education
+- Web Development
+- Data Science
+- Machine Learning
 
 ---
 
-## This is my deck
+I've noticed even some advanced programmers don't know the shortcuts
+I'm about to present to you. And this is unfortunate, because
+they are productivity boosters no matter what skill level you are at.
+
+A **symbol** is a name for something like a variable or a function.
+In Typescript, a symbol can also be a name for a type.
 
 ---
 
-<App />
+### F7
+
+- if cursor is on a symbol, jump to next symbol, within same file
+
+### Shift+F7
+
+- if cursor is on a symbol, jump to previous symbol, within same file
+
+---
+
+### Ctrl+Shift+.
+
+- shows only top level collapsed symbols, sorted by location, not alpha, within a file
+- only allows you to type and search for symbols are currently viewable by being unexpanded.
+- does allow you to navigate the breadcrumb hierarchy (Ctrl+Left and Ctrl+Right)
+
+### Ctrl+Shift+o
+
+- shows all symbols, uncollapsed, sorted by alpha not by location, within a file
+- allows you to type and search for symbols that are deeply nested.
+
+---
+
+As an aside, if you prefer to open the Outline in the sidebar, you can map your own keyboard short cut.
+The command is called Explorer: Focus on Outline View (outline.focus).
+I like Ctrl+Alt+o
+
+---
+
+### F12
+
+- Cursor must be on the symbol
+- Jumps to the definition of the symbol
+
+### Ctrl+t
+
+- Your cursor does not need to be on a symbol to search for it
+- Only searches for definitions
+- Does not search for references or implementations
+- Searches for symbols through all files in workspace
+- 🙁 even searches through node_modules
+
+---
+
+### Ctrl+K F12
+
+- Opens definition to the side
+- Close again with Ctrl+w,
+- focus on first editor with Ctrl+1
+- back to second editor again with Ctrl+2
+
+### Ctrl+Shift+F10
+
+- Peek at the definition
+- Esc to Close
+
+---
+
+### Shift+F12
+
+- Peek at references
+- F12 and Shift+F12 to navigate
+- Arrows to open and close, expand and collapse, and Enter to select
+- Esc Closes
+
+### Shift+Alt+F12
+
+- 😎 Find All References (in side bar)
+- Arrow keys to navigate
+- Enter to select
+- Ctrl+0 to focus on sidebar
+- Ctrl+1 to focus on first editor
+
+---
+
+### Ctrl+F12
+
+- Go to implementations
+- If only one implementation, it will jump to it (similar to F12, but focuses on the symbol, not the definition)
+- Otherwise, behaves like Ctrl+Shift+F12
+
+### Ctrl+Shift+F12
+
+- Peeks at implementations
+- F12 and Shift+F12 to navigate
+- Arrows to open and close, expand and collapse, and Enter to select
+- Esc Closes
+
+---
+
+If you are playing around with F12 keyboard shortcuts, you might accidentally run into this:
+
+### Ctrl+Alt+F12
+
+- ⚠️*Warning!* Has special meaning in Ubuntu.
+- If you accidentally press this, rescue yourself with Ctrl+Alt+F2
+
+---
+
+Saving the best for last...
+
+### F2
+
+- most powerful refactoring tool ever
+- renames a symbol across all files (without saving them)
+- I strongly recommend a keyboard shortcut to run the command File: Save All. I personally use Ctrl+K a
 
 ---
 
